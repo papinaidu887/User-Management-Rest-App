@@ -1,0 +1,51 @@
+server:
+  port: 9090
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://usermanagement-db.cnuoop8rgd1u.ap-south-1.rds.amazonaws.com:3306/usermanagementdb
+    username: admin
+    password: admin123
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+app: 
+  messages: 
+    loginSucc: login successfully
+    loginFail: login failed
+    registrationSucc: registration successfully......
+    registrationFail: registration failed
+    
+#spring.mail.host=smtp.gmail.com
+#spring.mail.port=587
+#spring.mail.username=username
+#spring.mail.password=password
+#
+## Other properties
+#spring.mail.properties.mail.smtp.auth=true
+#spring.mail.properties.mail.smtp.connectiontimeout=5000
+#spring.mail.properties.mail.smtp.timeout=5000
+#spring.mail.properties.mail.smtp.writetimeout=5000
+#
+## TLS , port 587
+#spring.mail.properties.mail.smtp.starttls.enable=true
+
+#server:
+#  port: 9090
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    password: 1234
+#    url: jdbc:mysql://localhost:3306/testDb?useSSL=false
+#    username: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+#    show-sql: true
+  
