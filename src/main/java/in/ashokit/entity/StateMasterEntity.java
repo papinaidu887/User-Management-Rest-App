@@ -1,5 +1,7 @@
 package in.ashokit.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,9 +14,14 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name="STATES_MASTER ")
-public class StateMasterEntity {
+public class StateMasterEntity implements Serializable {
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="STATE_ID")

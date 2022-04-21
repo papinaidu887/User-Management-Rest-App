@@ -1,5 +1,6 @@
 package in.ashokit.entity;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -20,8 +21,13 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name="USER_DETAILS")
-public class UserAccountEntity {
+public class UserAccountEntity implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="USER_ID")
@@ -33,14 +39,14 @@ public class UserAccountEntity {
 	@Column(name="LAST_NAME")
 	private String lastName;
 	
-	@Column(name="USER_EMAIL", unique = true)
-	private String userEmail;
+	@Column(name="Email")
+	private String email;
 	
 	@Column(name="USER_PWD")
-	private String userPWD;
+	private String passWord;
 	
-	@Column(name="USER_MOBILE")
-	private Long userMobile;
+	@Column(name="Phone_Number")
+	private Long phoneNumber;
 	
 	@Column(name="DOB")
 	@DateTimeFormat(pattern="dd/MM/yyyy")

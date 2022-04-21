@@ -9,5 +9,7 @@ public class AppConstatnts {
 	public static final String REGISTRATION_SUCC = "registrationSucc";
 	
 	public static final String REGISTRATION_FAIL  = "registrationFail";
+	
+	public static final String REST_CONTROLLERS_PACKAGE  = "in.ashokit.rest";
 
 }

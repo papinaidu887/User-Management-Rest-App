@@ -6,7 +6,7 @@ import in.ashokit.bindings.LoginForm;
 import in.ashokit.bindings.UnlockAccForm;
 import in.ashokit.bindings.UserRegForm;
 
-public interface UserMgmtService {
+public interface UserManagementService {
 	
 		// login screen related methods
 		public String loginCheck(LoginForm loginForm);
