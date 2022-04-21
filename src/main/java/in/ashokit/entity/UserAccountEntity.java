@@ -13,7 +13,6 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import lombok.Data;
 
@@ -49,7 +48,6 @@ public class UserAccountEntity implements Serializable {
 	private Long phoneNumber;
 	
 	@Column(name="DOB")
-	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Date birthDate;
 	
 	@Column(name="GENDER")

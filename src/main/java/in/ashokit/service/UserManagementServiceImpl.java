@@ -114,8 +114,8 @@ public class UserManagementServiceImpl implements UserManagementService {
 		userRegForm.setPassword(generateRandomPwd(6));
 
 		UserAccountEntity entity = new UserAccountEntity();
-		entity.setAccStatus("LOCKED");
 		BeanUtils.copyProperties(userRegForm, entity);
+		entity.setAccStatus("LOCKED");
 
 		userAccountRepo.save(entity);
 
